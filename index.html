@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Tyler Bradshaw">
+        <meta name="description" content="At Red Clover Sugar Studio, we specialize in innovative hair solutions and gentle, effective hair removal techniques to ensure you leave feeling confident and rejuvenated.">
+        <meta name="keywords" content="">
+        <title>Red Clover Sugar Studio -- Covington, WA</title>
+        <meta name="robots" content="index,follow">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Red Clover Sugar Studio</h1>
+            <button id="themeToggle">Dark Mode</button>
+            <nav>
+                <div>
+                    <h2 class="sr">Main Navigation</h2>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <section id="about">
+                <h2>About</h2>
+                <p>Hello there! My name is Amanda and I'm the sole owner of Red Clover Sugar Studio. I specialize in providing sugar hair removal services, custom facials, resurfacing treatments, dermaplane facials, brow services and hair services. With my expertise and attention to detail, I ensure that each client receives personalized care and achieves their desired results.</p>
+                <p>
+                    Outside of work, I have two adorable dogs named Daisy and Winston who bring endless joy to my life. Spending quality time with my family and loved ones is important to me, and we often embark on exciting travel adventures together. Being based in the Pacific Northwest, I find solace in hiking the picturesque trails of the region, connecting with nature, and embracing the beauty of the outdoors.</p>
+                <p>I warmly welcome clients to my studio in Covington, WA, where I strive to create a serene and inviting atmosphere. Whether you're looking to achieve smooth, hair-free skin, revitalize your complexion, perfect your brows, beautify your hair or simply unwind and enjoy some self-care time, I'm here to provide exceptional services tailored to your individual needs. Book an appointment today and let's embark on your journey to beauty and well-being!</p>
+                <h3>How to get the best results from your hair removal service:</h3>
+                <ul>
+                    <li>Hair should be at a minimum of 2 weeks of growth; this is about the length of a grain of rice for comparison.</li>
+                    <li>Hydration is the key to good results; drink 100 ounces of water every day for three consecutive days prior to your appointment.</li>
+                    <li>Enjoy a long soak in an epsom salt bath the evening before your appointment.</li>
+                    <li>Gently exfoliate areas that you wish to have sugar applied to two days prior.</li>
+                    <li>Refrain from applying deodorant, body oils, and lotions the day of your appointment.</li>
+                    <li>Arrive in comfortable, loose fitting clothing.</li>
+                    <li>YOU GOT THIS! &hearts;</li>
+                </ul>
+            </section>
+
+            <section id="booking">
+                <a href="https://redclover.glossgenius.com/">Schedule / Booking Information</a>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label for="fullName">Full Name:</label> 
+                    <input type="text" id="fullName" name="fullName" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" required></textarea>
+                    <fieldset>
+                        <legend>Preferred Contact Method:</legend>
+                        <label>
+                            <input type="radio" name="contactMethod" value="email" required>Email
+                        </label>
+                        <label>
+                            <input type="radio" name="contactMethod" value="email" required>Phone
+                        </label>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <section id="products">
+                <h2>Product Recommendations</h2>
+                <div class="product">
+                    <img src="#" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$25</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$40</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </section>
+
+            <section id="calculator">
+                <h2>Cost Calculator</h2>
+                <p>Selected Products Total: <span id="totalCost">0</span></p>
+                <p>Shipping: <span id="shipping">5</span></p>
+                <p>Tax (10%): <span id="tax">0</span></p>
+                <p>Total Cost: <span id="finalCost">0</span></p>
+            </section>
+
+            <script src="script.js"></script>
+        </main>
+    </body>
+</html>
+

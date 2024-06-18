@@ -76,26 +76,39 @@
 
             <section id="products">
                 <h2>Product Recommendations</h2>
-                <div class="product">
-                    <img src="#" alt="Product 1">
-                    <h3>Product 1</h3>
-                    <p>$25</p>
-                    <button class="addToCart">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Product 2">
-                    <h3>Product 2</h3>
-                    <p>$40</p>
-                    <button class="addToCart">Add to Cart</button>
-                </div>
+                    <div class="product">
+                        <img src="#" alt="Product 1">
+                        <div class="info">
+                            <h3>Product 1</h3>
+                            <p class="price">$25</p>
+                        </div>    
+                        <button class="addToCart">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="Product 2">
+                        <div class="info">
+                            <h3>Product 2</h3>
+                            <p class="price">$40</p>
+                        </div>
+                        <button class="addToCart">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="Product 3">
+                        <div class="info">
+                            <h3>Product 3</h3>
+                            <p class="price">$35</p>
+                        </div>    
+                        <button class="addToCart">Add to Cart</button>
+                    </div>
             </section>
 
             <section id="calculator">
                 <h2>Cost Calculator</h2>
-                <p>Selected Products Total: <span id="totalCost">0</span></p>
-                <p>Shipping: <span id="shipping">5</span></p>
-                <p>Tax (10%): <span id="tax">0</span></p>
-                <p>Total Cost: <span id="finalCost">0</span></p>
+                <p>Total: $<span id="totalCost">0</span></p>
+                <p>Shipping: <span id="shipping">Flat Rate $5.00</span></p>
+                <p>Tax (10%): $<span id="tax">0</span></p>
+                <p>Total Cost: $<span id="finalCost">0</span></p>
+                <button class="checkout">Check Out</button>
             </section>
 
             <script src="script.js"></script>

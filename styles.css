@@ -1,50 +1,316 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
 body{
-    font-family: Arial, sans-serif;
-    max-width: 1280px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    color: #000;
+    color: #202C20;
     transition: background-color 0.3s, color 0.3s;
 }
-header, #products {
+header {
+    border-bottom: 3px solid #202C20;
+    background-color: #faf0e6;
+    color: #202C20;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    transition: all 0.3s ease;
+    min-height: 128px;
+    color:#593244
 }
-#themeToggle {
-    padding: 10px;
-}
-.darkMode {
-    background-color: #000;
-    color: #fff;
-}
-.info {
+#hdiv {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    gap: 5%;
+    padding: 4% 10% 4% 7%;
+    justify-content: space-between;
 }
-section {
-    margin: 20px 0;
+h1, h2, h3 {
+    font-weight: 500;
+    color:#593244;
+}
+h1 {
+    font-size: 1.75em;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.3s ease;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    align-content: center;
+    min-width: 240px;
+
+}
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+h2, h3 {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+h3 {
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+header a {
+    text-decoration: none;
+}
+nav a, #g2 a {
+    color: #202C20;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px dashed #DFA0B5;
+    transition: all 0.3s ease;
+}
+nav a:hover, #g2 a:hover {
+    border: 2px solid #593244;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    list-style: none;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+}
+nav a {
+    width: 100%;
+    height: 100%;
+    padding: 5px 20px;
 }
 
+section {
+    margin: 5%;
+    overflow: visible;
+    text-align: center;
+    background-color: #faf0e6;
+    padding: 10px;
+    transition: all 0.2s ease;
+    border: 3px solid #202C20;
+}
+form {
+    margin: 5%;
+    padding: 2.5% 5% 1% 5%;
+    border: 3px solid #202C20;
+}
+textarea {
+    resize: none;
+}
+
+#g1 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-areas: "a b" "c b" "d b" "e b";
+    grid-template-columns: 1fr 1fr;
+}
+#g1 p {
+    margin: 2.5% 5%;
+}
+#amanda {
+    border: 3px solid #202C20;
+    grid-row: span 4;
+    width: 90%;
+}
+#about {
+    margin-top: 14%;
+}
+#aboutHeading {
+    grid-area: a;
+}
+#p1 {
+    grid-area: c;
+}
+#p2 {
+    grid-area: d;
+}
+#p3 {
+    grid-area: e;
+}
+#g2 {
+	display: grid;
+	grid-template-areas: "a" "c" "b";
+	margin: 5%;
+	padding: 5%;
+	border: 5px groove #A67285;
+    grid-row-gap: 20px;
+}
+#booking {
+	grid-area: b;
+	height: 75px;
+}
+#book {
+    font-size: 2em;
+    letter-spacing: 0.2rem;
+}
+#g2 a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+#g2 ul {
+    grid-area: c;
+    margin: 0 auto;
+    text-align: justify;
+}
+.sr:focus {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: auto;
+}
+.prodH {
+    width: 100%;
+}
+#productList {
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 99%;
+}
+#wreath {
+    height: 400px;
+    max-width: 100%;
+    margin: 5% auto 0 auto;
+}
+.product {
+    display: inline-block;
+}
+.product img {
+    width: 300px;
+}
+#themeToggle {
+    position: fixed;
+    font-size: 1em;
+}
+#complete {
+    margin-top: 20px;
+    color: green;
+}
 #contactForm {
     display: flex;
     flex-direction: column;
 }
+#prodGrid {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
 #contactForm label, #contactForm input, #contactForm textarea, #contactForm fieldset {
     margin-bottom: 10px;
+}
+#calculator {
+    margin-top: 20px;
+}
+.sr:not(:focus):not(:active) {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    left: 1000%;
+    font-size: 2em;
+}
+.darkMode {
+    background-color: #202C20;
+    color: #faf0e6;
+    border-color:#faf0e6 !important;
+    transition: all 0.3s ease;
+}
+.darkHeader {
+    background-color: #202C20;
+    color: #faf0e6;
+    border-bottom: 2px solid #faf0e6;
+    z-index: 200;
+}
+.darkPar {
+    background-blend-mode: difference !important;
+    background-color:#456 !important;
+}
+.darkH1 {
+    color: #faf0e6;
+}
+.darkHeading {
+    color:#DFA0B5;
+}
+.darkDest {
+    color: #dfa0b5 !important;
+    border-color: #A67285 !important;
+}
+.darkDest:hover {
+    border-color:#DFA0B5 !important;
+}
+.darkImg {
+    filter: invert(1);
+    position: relative;
+    z-index: 0;
+}
+.info {
+    display: grid;
+    grid-template-areas: "a a" "b c";
+}
+.info p {
+    grid-area: b;
+}
+.info h3 {
+    grid-area: a;
+}
+.error {
+    color: red;
+    display: none;
 }
 .product {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
-    width: 33.3%;
+    width: fit-content;
     box-sizing: border-box;
 }
-.addToCart {
-    margin-top: 10px;
+.parallax {
+    background-image: url('images/130Z_221104_meadow_stock\ [Converted].png');
+    height: 1200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 200px;
+    background-color: #123;
+    background-blend-mode: difference;
+    transition: background-color 0.3s ease;
 }
-
-#calculator {
-    margin-top: 20px;
+.addToCart, button {
+    background-color: #DFA0B5;
+    color: #202c20;
+    border: 3px solid #A67285;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family:inherit;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #202c20;
+    letter-spacing: 0.1rem;
+}
+.addToCart:hover, button:hover {
+    background-color: #593244;
+    color: #e4dfd3;
+    -webkit-text-stroke: 1px #e4dfd3;
+}
+.addToCart {
+    padding: 10px;
+}
+.price {
+    font-size: 1.5em;
+    text-align: center;
 }
